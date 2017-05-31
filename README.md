@@ -34,13 +34,20 @@ time.
 
 > What is your opinion of the same-origin policy?  Support your opinion with some evidence.
 
+Same origin policy is good for security since it places limits on data
+accessibility. An example of this would be an attempted attacked by a malicious
+site on a a users bank account. If the user is logged in to the bank account and
+has the browser open to the malicious page, same origin policy prevents the
+malware from accessing the bank account information.
+
 Same-origin policy is good for security reasons since limiting where the user
-can go prevents them from accessing unauthorized pages.
-Same-origin policy prevents malicious attacks from unauthorized web pages.
+prevents them from accessing unauthorized pages.
+
 EX: Having a browser open with your bank account and a malicious site open on
-the same browser. 
+the same browser.
 
 > Based on what you know, how would you explain CORS?
 
-When a request is made that is on a different domain or port that is different
-from the one which the first resource it serves.  
+CORS works within the same origin policy framework by providing keys which allow
+one site to access data through another site. Same origin policy prevents this
+interaction without special credentialing.
